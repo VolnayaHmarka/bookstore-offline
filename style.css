@@ -1,0 +1,26 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,sans-serif}
+body{background:#f9f7f5;color:#1e1e2a;min-height:100vh;display:flex;flex-direction:column}
+.app-header{background:#ffffffd0;backdrop-filter:blur(8px);box-shadow:0 4px 10px rgba(0,0,0,0.03);border-bottom:1px solid #e4dcd3;padding:1rem 2rem;position:sticky;top:0;z-index:10}
+.header-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.logo h1{font-weight:600;font-size:1.9rem;color:#2c3e4e}
+.logo span{font-weight:300;font-size:1rem;margin-left:6px;color:#6b4f3c}
+.nav-menu{display:flex;gap:0.5rem;flex-wrap:wrap}
+.nav-btn{background:transparent;border:none;padding:0.7rem 1.4rem;font-size:1.05rem;font-weight:500;border-radius:40px;color:#3a3a4e;cursor:pointer;transition:all 0.2s}
+.nav-btn:hover{background:#ede7e0}
+.nav-btn.active{background:#2c3e4e;color:white}
+.app-main{flex:1;max-width:1280px;margin:2rem auto;padding:0 1.5rem;width:100%}
+.grid-catalog{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:2rem;margin-top:2rem}
+.book-card{background:white;border-radius:20px;padding:1.5rem;box-shadow:0 10px 20px rgba(0,0,0,0.02);border:1px solid #ece4db;display:flex;flex-direction:column}
+.book-img{width:100%;aspect-ratio:3/4;background:linear-gradient(145deg,#e6dbd0,#d4c5b8);border-radius:14px;margin-bottom:1.2rem;display:flex;align-items:center;justify-content:center;color:#4d3e32;font-weight:500}
+.book-title{font-weight:700;font-size:1.2rem;margin-bottom:0.4rem}
+.book-price{font-weight:600;color:#1e5555;margin-bottom:1rem;font-size:1.25rem}
+.card-actions{display:flex;gap:0.6rem;margin-top:auto}
+.btn{border:none;background:#ece4db;padding:0.6rem 1rem;border-radius:40px;font-weight:500;cursor:pointer;font-size:0.9rem;flex:1}
+.btn-primary{background:#2c3e4e;color:white}
+.btn-primary:hover{background:#1f2e3a}
+.btn-outline{background:white;border:1px solid #b7a89b}
+.cart-item{display:flex;align-items:center;gap:1.2rem;padding:1.2rem 0;border-bottom:1px solid #e2d7cd}
+.cart-total{text-align:right;font-size:1.8rem;font-weight:700;margin-top:1.8rem;border-top:2px solid #ccc2b6;padding-top:1.8rem}
+.hero{background:#e7dfd6;padding:3rem;border-radius:48px;text-align:center}
+.about-card{background:white;border-radius:28px;padding:2.5rem}
+@media(max-width:600px){.header-inner{flex-direction:column}.nav-btn{padding:0.5rem 1rem}}
